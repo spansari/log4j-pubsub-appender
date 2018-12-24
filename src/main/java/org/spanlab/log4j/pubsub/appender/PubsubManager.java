@@ -57,9 +57,9 @@ public class PubsubManager extends AbstractManager {
             throws GeneralSecurityException, IOException {
         super(LoggerContext.getContext(), name);
 
-        System.out.println("***********************************");
-        System.out.println("INSIDE PUBSUB APPENDER");
-        System.out.println("***********************************");
+//        System.out.println("***********************************");
+//        System.out.println("INSIDE PUBSUB APPENDER");
+//        System.out.println("***********************************");
 
         fullyDefinedTopicName = createFullyDefinedTopicName(googleCloudProjectId, topic);
 
@@ -67,10 +67,10 @@ public class PubsubManager extends AbstractManager {
                 googleCloudCredentials,
                 maxRetryTimeMillis);
 
-        System.out.println("***********************************");
-        System.out.println("INSIDE PUBSUB APPENDER  projectId:" + googleCloudProjectId);
-        System.out.println("INSIDE PUBSUB APPENDER creating topic:" + topic);
-        System.out.println("***********************************");
+//        System.out.println("***********************************");
+//        System.out.println("INSIDE PUBSUB APPENDER  projectId:" + googleCloudProjectId);
+//        System.out.println("INSIDE PUBSUB APPENDER creating topic:" + topic);
+//        System.out.println("***********************************");
         if (autoCreateTopic) {
             createTopic();
         }
@@ -149,9 +149,9 @@ public class PubsubManager extends AbstractManager {
                         try {
                             final HttpTransport transport = GoogleNetHttpTransport.newTrustedTransport();
 
-                            System.out.println("***********************************");
-                            System.out.println("INSIDE PUBSUB APPENDER");
-                            System.out.println("***********************************");
+//                            System.out.println("***********************************");
+//                            System.out.println("INSIDE PUBSUB APPENDER");
+//                            System.out.println("***********************************");
                             return new PubsubManager(name,
                                     transport,
                                     googleCloudCredentials,
