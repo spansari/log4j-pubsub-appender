@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+  <Appenders>
+    <Console name="STDOUT">
+      <PatternLayout pattern="%msg%n"/>
+    </Console>
+
+    <Pubsub name="log_to_pubsub"
+                        projectId="gcloud-projectId"
+                        topic="topic">
+      <PatternLayout pattern="%msg%n"/>
+      <GoogleCloudCredentials serviceAccountJsonFileName="file.json"/>
+    </Pubsub>
+
+  </Appenders>
+
+  <Loggers>
+    <Logger name="log_to_pubsub"
+            level="trace"
+            additivity="false"
+            includeLocation="false">
+      <AppenderRef ref="log_to_pubsub"/>
+    </Logger>
+
+    <Root level="debug"
+          includeLocation="false">
+      <AppenderRef ref="STDOUT"/>
+    </Root>
+  </Loggers>
+</Configuration>
