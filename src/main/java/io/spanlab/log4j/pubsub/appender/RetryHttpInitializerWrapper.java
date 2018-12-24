@@ -1,4 +1,4 @@
-package org.spanlab.log4j.pubsub.appender;
+package io.spanlab.log4j.pubsub.appender;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.http.HttpBackOffIOExceptionHandler;

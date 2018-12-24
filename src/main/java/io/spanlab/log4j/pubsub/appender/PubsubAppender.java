@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package org.spanlab.log4j.pubsub.appender;
+package io.spanlab.log4j.pubsub.appender;
 
 import org.apache.logging.log4j.core.Filter;
 import org.apache.logging.log4j.core.Layout;
@@ -27,7 +27,7 @@ import org.apache.logging.log4j.core.layout.PatternLayout;
 
 import java.io.Serializable;
 
-import static org.spanlab.log4j.pubsub.appender.PubsubManager.getManager;
+import static io.spanlab.log4j.pubsub.appender.PubsubManager.getManager;
 
 @Plugin(name = "Pubsub", category = Node.CATEGORY, elementType = "appender", printObject = true)
 public class PubsubAppender extends AbstractAppender {

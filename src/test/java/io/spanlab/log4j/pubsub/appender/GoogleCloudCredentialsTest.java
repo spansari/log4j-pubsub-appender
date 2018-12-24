@@ -1,4 +1,4 @@
-package org.spanlab.log4j.pubsub.appender;
+package io.spanlab.log4j.pubsub.appender;
 
 import org.junit.Before;
 import org.junit.runner.RunWith;

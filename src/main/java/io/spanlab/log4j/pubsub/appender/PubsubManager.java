@@ -14,7 +14,7 @@
  * under the License.
  */
 
-package org.spanlab.log4j.pubsub.appender;
+package io.spanlab.log4j.pubsub.appender;
 
 import com.google.api.client.googleapis.javanet.GoogleNetHttpTransport;
 import com.google.api.client.googleapis.json.GoogleJsonResponseException;

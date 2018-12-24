@@ -14,9 +14,9 @@ config is a bit more complicated.
 ```xml
 
 <Appenders>
-  <GoogleCloudPubsub name="log_to_pubsub" projectId="google-projectId-with billing" topic="topic">
+  <Pubsub name="log_to_pubsub" projectId="google-projectId-with billing" topic="topic">
     <GoogleCloudCredentials serviceAccountJsonFileName="serviceAccountFile.json"/>
-  </GoogleCloudPubsub>
+  </Pubsub>
 </Appenders>
 ```
 ### Clone this repo and build:
@@ -27,7 +27,7 @@ Then update `pom.xml` of your project where you want to use this appender
 
 ```xml
 <dependency>
-  <groupId>org.spanlab</groupId>
+  <groupId>io.github.spansari</groupId>
   <artifactId>log4j2-pubsub-appender</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 </dependency>
